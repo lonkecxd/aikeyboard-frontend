@@ -1,0 +1,110 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    background-color: #e0e3e8;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #282c34;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #475F7B;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+
+/* ------------ */
+
+.form-area{
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+    padding: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.form-area .form-inner{
+    width: 100%;
+}
+
+
+/* ------------ */
+.react-tab-pane {
+    display: none;
+}
+
+.react-tab-pane.show {
+    display: block;
+    text-align: left;
+}
+
+.answersheet {
+    display: none;
+}
+
+.answersheet.show {
+    display: block;
+    text-align: left;
+}
+
+.react-tab-link-group {
+    background-color: #1C85E8;
+    display: flex;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.react-tab-link-group li {
+    margin-right: 10px;
+    list-style: none;
+}
+
+.react-tab-link-group li .react-tab-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 6px 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.react-tab-link-group li .react-tab-link:hover {
+    color: #fff;
+}
+
+.react-tab-link-group li.active .react-tab-link {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.react-tab-pane p {
+    margin-bottom: 0;
+}
+
+.react-tab-pane h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.vertical-tabs.react-tab-link-group li {
+    width: 100%;
+}
+
+.vertical-tabs.react-tab-link-group li .react-tab-link {
+    width: 100%;
+}

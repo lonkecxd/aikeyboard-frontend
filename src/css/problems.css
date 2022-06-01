@@ -1,0 +1,38 @@
+.textbox {
+    width: 100%;
+    resize: none;
+    background: linear-gradient(145deg, #ffffff, #E9F2FB);
+    box-shadow:  inset 8px 8px 15px #D9E3EC;
+    border-radius: 12px;
+    border: none;
+    overflow: auto;
+    padding: 20px;
+    outline: none;
+    margin: 50px 0;
+}
+.question{
+    white-space: pre-wrap;
+}
+.btn_answer{
+    background-color: #00AB83;
+    color: white;
+    border: 1px solid rgba(115, 132, 140, 0.15);
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2.8px 2.2px hsla(200, 10%, 20%, calc(.02 + .03));
+}
+.btn_gen{
+    background-color: #005eab;
+    color: white;
+    border: 1px solid rgba(115, 132, 140, 0.15);
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2.8px 2.2px hsla(200, 10%, 20%, calc(.02 + .03));
+}
+
+.btn_answer:hover {
+    box-shadow: 0 0 5px #bdbbbb;
+}
+.btn_answer:active {
+    box-shadow: 0 0 -5px #eee;
+}

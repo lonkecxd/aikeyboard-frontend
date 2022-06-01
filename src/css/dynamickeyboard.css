@@ -1,0 +1,191 @@
+@charset "UTF-8";
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 800px;
+    transition: all 0.35s;
+}
+.container .layout {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid rgba(115, 132, 140, 0.15);
+    box-shadow: 0 1rem 0.5rem -0.5rem;
+    transition: all 0.35s;
+    box-shadow: 0 2.8px 2.2px hsla(200, 10%, 20%, calc(.02 + .03)), 0 6.7px 5.3px hsla(200, 10%, 20%, calc(.02 + .01)), 0 12.5px 10px hsla(200, 10%, 20%, calc(.02 + .02)), 0 22.3px 17.9px hsla(200, 10%, 20%, calc(.02 + .02)), 0 41.8px 33.4px hsla(200, 10%, 20%, calc(.02 + .03)), 0 100px 80px rgba(46, 53, 56, 0.02);
+}
+.container .layout .banner {
+    display: flex;
+    justify-content: space-between;
+}
+.container .layout .banner .banner_left {
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+.container .layout .banner .banner_left .title1 {
+    font-size: 20px;
+}
+.container .layout .banner .banner_left .title2 {
+    font-size: 14px;
+}
+.container .layout .banner .banner_left .kp {
+    background-color: #ededed;
+    margin: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.container .layout .banner .banner_left .active {
+    color: white;
+    background-color: #00AB83;
+}
+
+.container .layout .banner .banner_left .kp:hover {
+    color: white;
+    background-color: #019472;
+}
+
+.container .layout .banner .banner_left .btn_collapse {
+    background-color: #eee;
+    border-radius: 50%;
+}
+.container .layout .banner .banner_left .btn_collapse:after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.container .layout .banner .banner_right {
+    justify-content: flex-end;
+}
+
+.Layer {
+    margin-top: 10px;
+    transition: all 0.35s;
+    overflow: hidden;
+    position: relative;
+}
+.Layer .symbols {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 250px;
+    flex-wrap: wrap;
+    transition: all 0.35s;
+}
+.Layer .symbols .symbol {
+    background-color: white;
+    border: 1px solid rgba(115, 132, 140, 0.15);
+    margin: 2px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.Layer .symbols .symbol:hover {
+    box-shadow: 0 0 5px #d0cece;
+    transform: translateY(-2px);
+    font-size: 1.2em;
+}
+.Layer .symbols .symbol:active {
+    box-shadow: 0 0 -5px #eee;
+}
+.Layer .symbols .symbol_ {
+    background-color: white;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    border: 1px solid rgba(115, 132, 140, 0.15);
+    box-shadow: 0 2.8px 2.2px hsla(200, 10%, 20%, calc(.02 + .03));
+    padding: 5px;
+    display: block;
+    flex-direction: column;
+    font-size: 10px;
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    color: #0188fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.Layer .symbols .symbol_ .s1 {
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+.Layer .symbols .symbol_:hover {
+    box-shadow: 0 0 5px #d0cece;
+    transform: translateY(-2px);
+}
+.Layer .symbols .symbol_:active {
+    box-shadow: 0 0 -5px #eee;
+}
+
+.btn_unfold {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #a0a0a0;
+    font-size: 10px;
+    width: auto;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.15s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn_unfold.active {
+    color: white;
+    background-color: #00AB83;
+}
+
+.btn_unfold:hover {
+    border-radius: 2px;
+    background-color: #cdcdcd;
+}
+
+.mh55 {
+    max-height: 55px;
+}
+
+.mh35 {
+    max-height: 35px;
+}
+
+.mh70 {
+    max-height: 70px;
+}
+.mh110 {
+    max-height: 110px;
+}
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input:checked ~ .symbols {
+    max-height: 100vh;
+}
